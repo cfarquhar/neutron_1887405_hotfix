@@ -1,0 +1,9 @@
+neutron_venv_path: /openstack/venvs/neutron-r18.0.1
+# aio1 has a slightly newer OSA tag
+# neutron_venv_path: /openstack/venvs/neutron-18.1.21.dev1/
+site_pkg_subpath: lib/python2.7/site-packages
+backup_root: /root/neutron_diag
+patched_files:
+  - name: neutron/agent/securitygroups_rpc.py
+    orig_sha1sum: 832ab93565888f84f7fbb1a85e584f4ae660a9ac
+    patch_sha1sum: cdb4b87758974abe2eb23e9d7179dbf232f7735e
